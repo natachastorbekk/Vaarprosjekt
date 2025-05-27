@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+img {
+    width: 100%;
+}
 body{
     background-color: lightblue;
 }
@@ -35,7 +38,17 @@ main{
     gap: 20px;
     padding-top: 20px;
     justify-content: center;
+    max-width: 800px;
+    margin: auto;
 }
+.test .container {
+    flex-direction: column;
+    max-width: 400px;
+}
+.test img {
+    border-radius: 20px;
+}
+
 .box{
     padding: 20px;
     border: 1px solid black;
