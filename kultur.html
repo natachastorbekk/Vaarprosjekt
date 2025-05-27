@@ -17,10 +17,22 @@
 
     <main>
         <div class="container">
-            <button type="button" class="box">Norsk kultur</button>
-            <button type="button" class="box">Fransk kultur</button>
+
+            <button class="kultur-knapp" onclick="visTekst('norge')">
+                <img src="Bilder/norge.png" alt="Norgesflagg" class="knapp-bilde">
+                Norsk kultur</button>
+
+            <button class="kultur-knapp" onclick="visTekst('frankrike')">
+                <img src="Bilder/fransk.png" alt="Franskflagg" class="knapp-bilde">
+                Fransk kultur</button>
+
+        </div>
+        <div id="kultur-tekst">
         </div>
     </main>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

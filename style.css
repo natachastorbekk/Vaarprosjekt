@@ -44,3 +44,28 @@ main{
     min-width: 100px;
     background-color: lightpink;
 }
+.kultur-knapp {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: darkcyan;
+    color: white;
+    border-radius: 5px;
+  }
+
+  #kultur-tekst {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  .knapp-bilde {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
