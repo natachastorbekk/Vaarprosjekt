@@ -25,7 +25,8 @@ imgElm.src = "Bilder/" + bildeObj.fil
 function sjekksvar(inputElm) {
   console.log("Du skrev", inputElm.value)
   console.log("Du skulle skrevet", bildeObj.riktigSvar)
+
+  // Nullstille input feltet
+  inputElm.value = ""
 }
-
-
 
