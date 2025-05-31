@@ -15,10 +15,20 @@
     
     <main>
         <div class="container">
-            <h1>Hei</h1>
+            <h1>Test deg selv i fransk!</h1>
             <img src="" id="testbilde" alt="">
             <p>Hva heter dette på fransk?</p>
-            <input type="text" onchange="sjekksvar(this)">
+            <input type="text" id="svar-input" onchange="sjekksvar(this)" placeholder="Skriv svaret her...">
+        </div>
+        <div id="svar-melding" class="svar-boks"></div>
+
+        <div id="knapp-container" class="knapp-container" style="display: none;">
+            <button class="quiz-knapp prov-igjen" onclick="provIgjen()">Prøv igjen!</button>
+            <button class="quiz-knapp hopp-over" onclick="hoppOver()">Hopp over</button>
+        </div>
+
+        <div id="neste-container" class="knapp-container" style="display: none;">
+            <button class="quiz-knapp neste" onclick="nesteSporsmal()">Neste!</button>
         </div>
     </main>
         
