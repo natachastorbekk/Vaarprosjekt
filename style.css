@@ -1,15 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 img {
     width: 100%;
 }
-body{
+
+body {
     background-color: lightblue;
 }
-h1, h2{
+
+h1,
+h2 {
     text-align: center;
 }
 
@@ -29,11 +33,12 @@ nav {
     text-decoration: none;
 
 }
-main{
+
+main {
     margin-top: 62px;
 }
 
-.container{
+.container {
     display: flex;
     gap: 20px;
     padding-top: 20px;
@@ -41,15 +46,17 @@ main{
     max-width: 800px;
     margin: auto;
 }
+
 .test .container {
     flex-direction: column;
     max-width: 400px;
 }
+
 .test img {
     border-radius: 20px;
 }
 
-.box{
+.box {
     padding: 20px;
     border: 1px solid black;
     border-radius: 8px;
@@ -57,6 +64,7 @@ main{
     min-width: 100px;
     background-color: lightpink;
 }
+
 .kultur-knapp {
     margin: 10px;
     padding: 15px 25px;
@@ -66,9 +74,9 @@ main{
     background-color: darkcyan;
     color: white;
     border-radius: 5px;
-  }
+}
 
-  #kultur-tekst {
+#kultur-tekst {
     padding: 20px;
     border: 1px solid black;
     border-radius: 8px;
@@ -76,13 +84,15 @@ main{
     font-size: 16px;
     max-width: 600px;
     margin: 20px auto;
-  }
-  .knapp-bilde {
+}
+
+.knapp-bilde {
     width: 30px;
     height: auto;
     margin-right: 10px;
 }
-.svar-boks{
+
+.svar-boks {
     margin: 20px 0;
     padding: 15px;
     border-radius: 8px;
@@ -91,23 +101,27 @@ main{
     display: none;
     text-align: center;
 }
-.riktig{
+
+.riktig {
     background-color: lightgreen;
     color: white;
     border: 2px solid black;
 }
-.feil{
+
+.feil {
     background-color: red;
     color: white;
     border: 2px solid black;
 }
-.knapp-container{
+
+.knapp-container {
     display: flex;
     gap: 10px;
     justify-content: center;
     margin-top: 15px;
 }
-.quiz-knapp{
+
+.quiz-knapp {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -115,18 +129,23 @@ main{
     cursor: pointer;
     font-weight: bold;
 }
-.prov-igjen{
+
+.prov-igjen {
     background-color: orange;
     color: white;
 }
-.hopp-over, .neste{
+
+.hopp-over,
+.neste {
     background-color: violet;
     color: white;
 }
-.quiz-knapp:hover{
+
+.quiz-knapp:hover {
     opacity: 0.8;
 }
-input[type="text"]{
+
+input[type="text"] {
     padding: 10px;
     font-size: 16px;
     border: 2px solid white;
@@ -134,8 +153,29 @@ input[type="text"]{
     width: 200px;
     text-align: center;
 }
-#sporsmal{
+
+#sporsmal {
     font-size: 18px;
     margin: 15px 0;
     font-weight: bold;
+}
+
+.bokser>div {
+    border: 1px solid black;
+    background-color: aliceblue;
+    height: 120px;
+}
+
+.bokser {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.bildetest{
+    width: 174px;
+    height: 80px;
 }
