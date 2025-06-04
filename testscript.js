@@ -1,5 +1,3 @@
-
-
 const bilder = [
   { fil: "hatt.png", riktigSvar: "chapeau", norsk: "hatt" },
   { fil: "eple.png", riktigSvar: "pomme", norsk: "eple" },
@@ -17,6 +15,7 @@ const bilder = [
 
 let gjeldendeBilde;
 let brukteBilder = [];
+
 function lastNyttBilde() {
   if (brukteBilder.length >= bilder.length) {
     brukteBilder = [];
@@ -36,6 +35,22 @@ function skjulAlleKnapper() {
   document.getElementById("knapp-container").style.display = "none";
   document.getElementById("neste-container").style.display = "none";
 }
+function felt(last){
+  const svarfelt= document.getElementById("svar-input")
+  svarfelt.disabled = last
+
+  if (last){
+    svarfelt.style.backgroundColor= "white";
+    svarfelt.style.color = "black";
+    svarfelt.style.border = "2px solid black";
+  }
+  else{
+    svarfelt.style.backgroundColor = "white";
+    svarfelt.style.color = "black";
+    svarfelt.style.border = "2px solid black";
+  }
+}
+
 function sjekksvar(inputElm) {
   const brukerSvar = inputElm.value.toLowerCase().trim();
   const riktigSvar = gjeldendeBilde.riktigSvar.toLowerCase();
@@ -52,6 +67,7 @@ function sjekksvar(inputElm) {
 
     document.getElementById("neste-container").style.display = "flex";
     document.getElementById("knapp-container").style.display = "none";
+    felt(true);
   } else {
 
     svarMelding.textContent = "Feil, du kan jo prøve igjen!";
@@ -60,6 +76,7 @@ function sjekksvar(inputElm) {
 
     document.getElementById("knapp-container").style.display = "flex";
     document.getElementById("neste-container").style.display = "none";
+    felt(true);
   }
 
   inputElm.value = "";
@@ -68,6 +85,7 @@ function sjekksvar(inputElm) {
 function provIgjen() {
   skjulAlleKnapper();
 
+  felt(false);
   document.getElementById("svar-input").focus();
 }
 
@@ -75,6 +93,7 @@ function hoppOver() {
   lastNyttBilde();
   skjulAlleKnapper();
 
+  felt(false);
   document.getElementById("svar-input").focus();
 }
 
@@ -82,7 +101,9 @@ function nesteSporsmal() {
   lastNyttBilde();
   skjulAlleKnapper();
 
+  felt(false);
   document.getElementById("svar-input").focus();
 }
 
 lastNyttBilde();
+felt(false);
