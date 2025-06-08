@@ -8,7 +8,7 @@ function visTekst(land) {
     tekst = "Fransk kultur er kjent for kunst, mat og mote. Frankrike har mange berømte kunstnere, forfattere og designere. Franske måltider er viktige sosiale samlinger, og landet er kjent for sitt brød, ost og vin. Arkitektur og historiske bygg er også en viktig del av den franske kulturen.";
   }
 
-  document.getElementById("kultur-tekst").innerText = tekst;
+  document.getElementById("kultur-tekst").innerText = tekst + 
 
 }
 
