@@ -186,3 +186,12 @@ nav a:hover{
     background-color: rbga (0,0,0,0.1);
     color: white;
 }
+		table{
+			border-collapse: collapse;
+			font-size: 13px;
+			width:400px; height: 600 px;
+		}
+		td, th{
+			border-bottom: 1px solid black;
+			padding:5px 10px;
+		}
